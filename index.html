@@ -483,7 +483,7 @@ footer{background:var(--brown);color:rgba(255,255,255,0.7);padding:64px 40px 32p
         <p>River Sober Living is recognized as a preferred referral partner for Hazelden Betty Ford Foundation. We welcome direct referrals from treatment professionals and case managers.</p>
       </div>
     </div>
-    <div class="contact-form reveal">
+    <form class="contact-form reveal" action="https://formspree.io/f/xaqldwwb" method="POST">
       <h3>Send Us a Message</h3>
       <div class="form-row">
         <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="fname" placeholder="John"/></div>
@@ -504,9 +504,9 @@ footer{background:var(--brown);color:rgba(255,255,255,0.7);padding:64px 40px 32p
         </select>
       </div>
       <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell us a bit about your situation or what you&rsquo;re looking for..."></textarea></div>
-      <button type="button" class="form-submit" onclick="handleSubmit()">Send Message</button>
+      <button type="submit" class="form-submit">Send Message</button>
       <p style="font-size:12px;color:var(--text-light);margin-top:12px;text-align:center;">We respond to all inquiries within one business day. For urgent matters, please call us directly.</p>
-    </div>
+    </form>
   </div>
 </div>
 </section>
