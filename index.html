@@ -649,7 +649,14 @@ const observer = new IntersectionObserver(function(entries) {
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(function(el) { observer.observe(el); });
-
+var carouselIndexes = {};
+function moveCarousel(trackId, direction) {
+  var track = document.getElementById(trackId);
+  var total = track.children.length;
+  if (!carouselIndexes[trackId]) carouselIndexes[trackId] = 0;
+  carouselIndexes[trackId] = (carouselIndexes[trackId] + direction + total) % total;
+  track.style.transform = 'translateX(-' + (carouselIndexes[trackId] * 100) + '%)';
+}
 function toggleFaq(questionEl) {
   var item = questionEl.parentElement;
   document.querySelectorAll('.faq-item').forEach(function(i) {
