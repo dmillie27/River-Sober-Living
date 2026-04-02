@@ -675,7 +675,14 @@ function handleSubmit() {
     btn.disabled = false;
   }, 4000);
 }
-
+var carouselIndexes = {};
+function moveCarousel(trackId, direction) {
+  var track = document.getElementById(trackId);
+  var total = track.children.length;
+  carouselIndexes[trackId] = carouselIndexes[trackId] || 0;
+  carouselIndexes[trackId] = (carouselIndexes[trackId] + direction + total) % total;
+  track.style.transform = 'translateX(-' + (carouselIndexes[trackId] * 100) + '%)';
+}
 document.querySelectorAll('.leap-cards, .houses-grid, .testi-grid, .about-stats').forEach(function(grid) {
   grid.querySelectorAll('.reveal').forEach(function(child, i) {
     child.style.transitionDelay = (i * 0.08) + 's';
