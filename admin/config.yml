@@ -12,9 +12,56 @@ collections:
         label: "Homepage"
         file: "_data/homepage.yml"
         fields:
-          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
-          - { label: "Hero Subheading", name: "hero_subheading", widget: "text" }
-          - { label: "About Text", name: "about_text", widget: "text" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Primary Button Text", name: "cta_primary", widget: "string" }
+              - { label: "Secondary Button Text", name: "cta_secondary", widget: "string" }
+
+          - label: "Who We Are"
+            name: "who_we_are"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Main Paragraph", name: "body", widget: "text" }
+              - { label: "Year Founded", name: "year_founded", widget: "string" }
+              - { label: "Number of Homes", name: "num_homes", widget: "string" }
+              - { label: "Days of Support", name: "days_support", widget: "string" }
+
+          - label: "LEAP Program"
+            name: "leap"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Section Subheading", name: "subheading", widget: "text" }
+              - label: "Pillars"
+                name: "pillars"
+                widget: "list"
+                fields:
+                  - { label: "Letter", name: "letter", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          - label: "House Rules"
+            name: "house_rules"
+            widget: "object"
+            fields:
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Requirements"
+                name: "requirements"
+                widget: "list"
+                fields:
+                  - { label: "Rule", name: "rule", widget: "string" }
+              - label: "Expectations"
+                name: "expectations"
+                widget: "list"
+                fields:
+                  - { label: "Expectation", name: "expectation", widget: "string" }
+              - { label: "Zero Tolerance Description", name: "zero_tolerance", widget: "text" }
+
           - label: "Houses"
             name: "houses"
             widget: "list"
@@ -22,6 +69,8 @@ collections:
               - { label: "House Name", name: "name", widget: "string" }
               - { label: "Location", name: "location", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - { label: "Details Line", name: "details", widget: "string" }
+
           - label: "Testimonials"
             name: "testimonials"
             widget: "list"
@@ -29,3 +78,18 @@ collections:
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Author Name", name: "author_name", widget: "string" }
               - { label: "Author Detail", name: "author_detail", widget: "string" }
+
+          - label: "FAQ"
+            name: "faq"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone Number", name: "phone", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Hours", name: "hours", widget: "string" }
