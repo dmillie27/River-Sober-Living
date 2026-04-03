@@ -52,24 +52,19 @@ fetch('/_data/homepage.json')
     
         if (h3) h3.textContent = house.name;
         if (location) location.textContent = house.location;
+    
         if (houseDetails[0]) {
-          const span = houseDetails[0].querySelector('span');
-          if (span) span.textContent = house.description;
+          const icon = houseDetails[0].querySelector('.house-detail-icon');
+          houseDetails[0].innerHTML = '';
+          if (icon) houseDetails[0].appendChild(icon);
+          houseDetails[0].appendChild(document.createTextNode(house.description));
         }
         if (houseDetails[1]) {
-          const span = houseDetails[1].querySelector('span');
-          if (span) span.textContent = house.details;
+          const icon = houseDetails[1].querySelector('.house-detail-icon');
+          houseDetails[1].innerHTML = '';
+          if (icon) houseDetails[1].appendChild(icon);
+          houseDetails[1].appendChild(document.createTextNode(house.details));
         }
-      }
-    });
-
-    // TESTIMONIALS
-    const testiCards = document.querySelectorAll('.testi-card');
-    data.testimonials.forEach((t, i) => {
-      if (testiCards[i]) {
-        testiCards[i].querySelector('.testi-text').textContent = t.quote;
-        testiCards[i].querySelector('.testi-author').textContent = t.author_name;
-        testiCards[i].querySelector('.testi-years').textContent = t.author_detail;
       }
     });
 
