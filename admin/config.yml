@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: dmillie27/River-Sober-Living
+  name: git-gateway
   branch: main
 
 media_folder: "images"
