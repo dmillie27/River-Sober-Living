@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "headline": "Begin Your New Chapter",
+    "subheading": "A safe, structured, and supportive community for men committed to lasting recovery. Walk beside the river. Rebuild your life.",
+    "cta_primary": "Apply for Residency",
+    "cta_secondary": "Call (208) 576-9527"
+  },
+  "who_we_are": {
+    "heading": "Recovery built on community & purpose",
+    "body": "River Sober Living is a men's sober living community in Boise, Idaho, founded in 2017 with a simple belief: lasting recovery happens in the context of genuine community, personal accountability, and intentional structure. Situated along the Boise River Greenbelt, our homes offer more than a safe place to sleep. We offer a framework for growth — one that bridges the gap between residential treatment and independent living.",
+    "year_founded": "2017",
+    "num_homes": "4",
+    "days_support": "365"
+  },
+  "leap": {
+    "heading": "The LEAP Program",
+    "subheading": "LEAP is the foundation of life at River Sober Living — a four-pillar framework designed to guide each resident toward meaningful, sustainable recovery.",
+    "pillars": [
+      { "letter": "L", "title": "Living", "description": "Learning to live well in sobriety means establishing daily routines, healthy habits, and a stable home environment." },
+      { "letter": "E", "title": "Engaging", "description": "Recovery doesn't happen in isolation. Residents engage with peers, house managers, and the broader recovery community." },
+      { "letter": "A", "title": "Achieving", "description": "We support residents in setting and reaching meaningful goals — employment, education, financial independence." },
+      { "letter": "P", "title": "Persevering", "description": "Long-term recovery requires resilience. We equip residents with coping tools and relapse-prevention strategies." }
+    ]
+  },
+  "house_rules": {
+    "heading": "Structure & House Rules",
+    "requirements": [
+      "Active participation in a 12-Step or recovery program",
+      "Attend a minimum of 3 meetings per week",
+      "Maintain employment, education, or active job search",
+      "Weekly house meetings and chores participation",
+      "Comply with all house curfews and schedules",
+      "Obtain and work with a sponsor",
+      "Random drug and alcohol testing at any time",
+      "Respect for all housemates and house property"
+    ],
+    "expectations": [
+      "No drugs, alcohol, or paraphernalia on property at any time",
+      "No weapons of any kind",
+      "No guests without prior house manager approval",
+      "Maintain personal space and shared common areas",
+      "Pay rent on time and fulfill financial commitments",
+      "No disruptive, threatening, or abusive behavior",
+      "Communicate openly with house managers",
+      "Support your fellow residents in their recovery"
+    ],
+    "zero_tolerance": "River Sober Living maintains a strict zero tolerance policy for drug and alcohol use. Any resident found to be using substances will be asked to leave immediately."
+  },
+  "houses": [
+    { "name": "Kuna House", "location": "Kuna, Idaho", "description": "Located in the peaceful community of Kuna, just outside Boise. A quiet, residential setting ideal for men seeking a calm environment.", "details": "All LEAP program requirements apply. House manager on-site support." },
+    { "name": "Avanti House", "location": "Boise, Idaho", "description": "Located in Boise with easy access to meetings, employment, and support services. A strong community house built on accountability.", "details": "Full LEAP programming, regular drug testing, required meetings and house activities." },
+    { "name": "Network House", "location": "Boise, Idaho", "description": "A well-established Boise home focused on building connections to recovery, community, and a new way of life.", "details": "Structured daily schedule, peer accountability, and dedicated house manager oversight." },
+    { "name": "McMullin House", "location": "Boise, Idaho", "description": "One of our established Boise locations offering a stable, community-oriented environment close to the Greenbelt.", "details": "Structured daily schedule, peer accountability, and dedicated house manager oversight." },
+    { "name": "Tyson House", "location": "Boise, Idaho", "description": "A strong, brotherhood-focused environment where men hold each other accountable and grow together.", "details": "All standard LEAP program requirements, zero tolerance policy in full effect." }
+  ],
+  "testimonials": [
+    { "quote": "River gave me more than a place to sleep. It gave me brothers. The structure was hard at first, but it was exactly what I needed.", "author_name": "James T.", "author_detail": "Resident, McMullin House • 2 years sober" },
+    { "quote": "I came here straight from treatment. The guys at River showed me what a sober life actually looks like. I have a job, an apartment, and my daughter back.", "author_name": "Marcus R.", "author_detail": "Former Resident • 3 years sober" },
+    { "quote": "The LEAP program isn't just a name. They actually walk you through it. This program changed my trajectory entirely.", "author_name": "Derek W.", "author_detail": "Former Resident • 18 months sober" },
+    { "quote": "The transition from inpatient to real life can be terrifying. River made it manageable. Safe. Even hopeful.", "author_name": "Kevin M.", "author_detail": "Hazelden Betty Ford Referral • Tyson House" },
+    { "quote": "I relapsed twice before coming to River. I'm 14 months clean and counting.", "author_name": "Anthony L.", "author_detail": "Resident, McMullin House • 14 months sober" }
+  ],
+  "faq": [
+    { "question": "Who is eligible to live at River Sober Living?", "answer": "River Sober Living is for adult men (18+) who are committed to sobriety and seeking a structured, supportive environment." },
+    { "question": "How long can I live at a River Sober Living house?", "answer": "We have no fixed maximum stay — residents remain as long as they are actively working their recovery and meeting house requirements." },
+    { "question": "What does rent include?", "answer": "Rent covers a furnished room, utilities, Wi-Fi, and access to all LEAP program resources and house manager support." },
+    { "question": "Do you accept referrals from treatment centers?", "answer": "Yes. We are a Preferred Provider through Hazelden Betty Ford Foundation and work with referrals throughout Idaho and the surrounding region." },
+    { "question": "What happens if a resident relapses?", "answer": "Any resident found using drugs or alcohol will be asked to leave. We can assist departing residents in connecting with higher levels of care." },
+    { "question": "How do I apply or check availability?", "answer": "Call us at (208) 576-9527 or email marcus@riversoberliving.com. Our hours are Monday through Sunday, 8am–10pm." },
+    { "question": "Are meetings required?", "answer": "Yes. All residents must attend a minimum of 3 recovery meetings per week and have an active sponsor." }
+  ],
+  "contact": {
+    "phone": "(208) 576-9527",
+    "email": "marcus@riversoberliving.com",
+    "hours": "Monday–Sunday, 8am–10pm"
+  }
+}
