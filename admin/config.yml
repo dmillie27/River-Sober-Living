@@ -10,7 +10,7 @@ collections:
     files:
       - name: "homepage"
         label: "Homepage"
-        file: "_data/homepage.yml"
+        file: "_data/homepage.json"
         fields:
           - label: "Hero"
             name: "hero"
