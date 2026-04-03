@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: dmillie27/River-Sober-Living
+  branch: main
+
+media_folder: "images"
+
+collections:
+  - name: "content"
+    label: "Site Content"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "_data/homepage.yml"
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subheading", name: "hero_subheading", widget: "text" }
+          - { label: "About Text", name: "about_text", widget: "text" }
+          - label: "Houses"
+            name: "houses"
+            widget: "list"
+            fields:
+              - { label: "House Name", name: "name", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Author Name", name: "author_name", widget: "string" }
+              - { label: "Author Detail", name: "author_detail", widget: "string" }
