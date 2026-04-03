@@ -4,7 +4,7 @@ fetch('/_data/homepage.json')
 
     // HERO
     const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) heroTitle.innerHTML = data.hero.headline.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    if (heroTitle) heroTitle.innerHTML = 'Begin Your <em>New Chapter</em>';
     const heroSub = document.querySelector('.hero-subtitle');
     if (heroSub) heroSub.textContent = data.hero.subheading;
 
@@ -46,15 +46,20 @@ fetch('/_data/homepage.json')
     const houseCards = document.querySelectorAll('.house-card');
     data.houses.forEach((house, i) => {
       if (houseCards[i]) {
-        houseCards[i].querySelector('h3').textContent = house.name;
-        houseCards[i].querySelector('.house-location').textContent = house.location;
-        const details = houseCards[i].querySelectorAll('.house-detail');
-        if (details[0]) details[0].querySelector('span') 
-          ? details[0].querySelector('span').textContent = house.description
-          : details[0].textContent = house.description;
-        if (details[1]) details[1].querySelector('span')
-          ? details[1].querySelector('span').textContent = house.details
-          : details[1].textContent = house.details;
+        const h3 = houseCards[i].querySelector('h3');
+        const location = houseCards[i].querySelector('.house-location');
+        const houseDetails = houseCards[i].querySelectorAll('.house-detail');
+    
+        if (h3) h3.textContent = house.name;
+        if (location) location.textContent = house.location;
+        if (houseDetails[0]) {
+          const span = houseDetails[0].querySelector('span');
+          if (span) span.textContent = house.description;
+        }
+        if (houseDetails[1]) {
+          const span = houseDetails[1].querySelector('span');
+          if (span) span.textContent = house.details;
+        }
       }
     });
 
